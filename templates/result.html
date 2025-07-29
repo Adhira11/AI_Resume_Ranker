@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ranking Results</title>
+</head>
+<body>
+    <h2>Resume Ranking Results</h2>
+    <table border="1">
+        <tr><th>Filename</th><th>Score</th></tr>
+        {% for file, score in ranked %}
+        <tr>
+            <td>{{ file }}</td>
+            <td>{{ "%.4f"|format(score) }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <br><br>
+    <a href="{{ download_link }}">Download Report (CSV)</a><br>
+    <a href="/">Back to Upload</a>
+</body>
+</html>
