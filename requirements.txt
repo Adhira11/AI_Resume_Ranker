@@ -1,0 +1,5 @@
+Flask
+spacy
+scikit-learn
+pandas
+PyPDF2
